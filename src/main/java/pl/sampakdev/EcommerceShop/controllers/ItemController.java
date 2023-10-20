@@ -26,7 +26,6 @@ public class ItemController {
 
     @GetMapping("/{id}")
     public Optional<Item> item(@PathVariable("id") String id) {
-        System.out.println(id);
         return this.itemRepository.findById(id);
     }
 
